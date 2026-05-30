@@ -219,21 +219,12 @@ border: 1px solid black;
 
 #section-2{
   width:100%;
-
-  min-height:100vh;
-
   background-color:#FBF9EB;
-
   display:flex;
   flex-direction:column;
-
   align-items:center;
   justify-content:center;
-
   text-align:center;
-
-gap: clamp(2rem,10vw,12rem);
-
   padding:clamp(40px,6vw,100px);
 }
 
@@ -248,19 +239,26 @@ gap: clamp(2rem,10vw,12rem);
 
   color:#201C1A;
 }
-
-#section-2 h2{
-  font-family:Roboto Mono;
-  background-color: #DAAEEA;
-  font-size:clamp(1rem,3.5vw,3.5rem);
-font-family: Midnight;
-  letter-spacing:2px;
- padding: clamp(2px,3rem,3px);
- border: 1px solid black;
- border-radius: 10px;
-transform: translateY(-50%) rotate(-2deg);
+.cards-main{
+  text-align: center;
 }
 
+.cards-main h2{
+  display:inline-block;
+  margin-bottom:3rem;
+
+  font-family:Midnight;
+  font-size:clamp(1rem,3.5vw,3.5rem);
+
+  background-color:#DAAEEA;
+
+  padding:0.5rem 2rem;
+
+  border:1px solid black;
+  border-radius:10px;
+
+  transform:rotate(-2deg);
+}
 .cards{
   display:flex;
   align-items:flex-start;
@@ -451,6 +449,182 @@ font-size:clamp(8px,1vw,15px);
   line-height:1.5;
 }
 
+.seprator{
+  border: 1px solid black;
+}
+
+.discover-section{
+ margin: clamp(10px, 10vw, 800px);
+ display: flex;
+ align-items: start;
+ flex-direction: column;
+ justify-content: space-between;
+gap: clamp(20px, 5vw, 100px);
+}
+
+.d-part-1{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  gap: clamp(20px,5vw,100px);
+}
+.d-part-1 input{
+  width: clamp(250px, 60vw, 500px);
+  height: clamp(60px, 6vw, 90px);
+
+  padding: 0 clamp(16px, 2vw, 24px);
+
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 8px;
+
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-family: Reackless;
+}
+
+.d-part-2{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-between;
+gap: clamp(8px, 1vw, 16px);
+}
+
+.d-part-2 p{
+  font-family: Figtree;
+}
+
+.btn-collections{
+  display:flex;
+  flex-wrap:wrap;
+  gap:clamp(10px,1vw,15px);
+  justify-content:start;
+}
+
+.btn-collections span{
+  font-family:Reackless;
+font-size:clamp(1rem, 2vw, 2rem);
+  padding:
+    clamp(8px,1vw,12px)
+    clamp(16px,2vw,24px);
+
+  background-color:#DAEAFF;
+
+  border:1px solid black;
+  border-radius:5px;
+}
+.d-part-1 input::placeholder{
+  font-size: inherit;
+  font-family: inherit;
+}
+#discover{
+   display:inline-block;
+  margin-bottom:3rem;
+ display:block;
+  width:fit-content;
+  font-family:Midnight;
+  font-size:clamp(1rem,3.5vw,3.5rem);
+
+  background-color:#FF7F31;
+
+  padding:0.5rem 2rem;
+
+  border:1px solid black;
+  border-radius:10px;
+
+  transform:rotate(-2deg);
+}
+
+#big-para{
+  font-family: Reackless;
+font-size: clamp(2rem, 6vw, 7rem);
+font-weight: 100;
+color: #201C1A;
+}
+
+.img-2 {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: clamp(80px, 10vw, 150px);
+}
+.big-img {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  gap: 1.5rem;
+}
+.img-1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.main-font {
+  font-family: Midnight;
+  font-size: clamp(2.5rem, 6vw, 6rem);
+  line-height: 1;
+}
+
+
+.para {
+  font-family: Reackless;
+  font-size: clamp(1rem, 2vw, 2rem);
+  max-width: 800px;
+  line-height: 1.4;
+}
+
+.origin {
+  font-family: Midnight;
+  font-size: clamp(1rem, 3vw, 3rem);
+  background-color: #A2C9FC;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  transform: rotate(-2deg);
+}
+
+.gif-imgs {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.gif-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.gif-item img {
+  width: clamp(70px, 8vw, 130px);
+}
+
+.gif-item h3 {
+  font-family: Reackless;
+  font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+  color: white;
+}
 /* TABLET */
 
 @media (max-width:900px){
