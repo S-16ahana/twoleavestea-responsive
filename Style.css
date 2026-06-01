@@ -667,6 +667,7 @@ color: #201C1A;
   border-radius:50px;
   border:none;
   cursor:pointer;
+  width: 200px;
 }
 
 @media (max-width:768px){
@@ -1194,16 +1195,18 @@ margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+ 
 }
 
 .ri-arrow-left-circle-fill{
   position: absolute;
  top: 220px;
   left: 0;
+   margin: 20px;
 }
 
 .ri-arrow-right-circle-fill{
-  
+   margin: 20px;
 
     position: absolute;
   top: 220px;
@@ -1756,4 +1759,32 @@ img{
   .nav-part-3 svg{
     width:24px;
   }
+}
+
+.nav-part-1 h3,
+.nav-part-3 h3{
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-part-1 h3::after,
+.nav-part-3 h3::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1px;
+  background: #201C1A;
+  transition: width 0.4s ease;
+}
+
+.nav-part-1 h3:hover::after,
+.nav-part-3 h3:hover::after{
+  width: 100%;
+}
+
+.nav-part-1 h3:hover,
+.nav-part-3 h3:hover{
+  transform: translateY(-2px);
 }
