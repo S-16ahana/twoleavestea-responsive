@@ -1655,8 +1655,7 @@ font-family: Figtree;
   }
 
   .p-foot-tag{
-    font-size:0.9rem;
-    bottom:15px;
+    display: none;
   }
 }
 
@@ -1704,6 +1703,7 @@ font-family: Figtree;
 
   nav{
     justify-content:space-between;
+    margin-top: 20px;
   }
 
   .nav-part-1 h3,
